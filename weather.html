@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Report</title>
+    <style>
+        body{
+            background-image: url(https://media.apnarm.net.au/media/images/2020/08/07/v3imagesbina76005dedfda6535ff832055ec0c5527-pcbcbniwrx8555v0tu2.jpg);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-repeat:no-repeat;
+            background-position:relative;
+            background-size: cover;
+        }
+        table{
+            margin: 30px;
+            background-color: rgba(0, 0, 0, 0.0);
+            border: 1px solid black;
+            border-collapse: collapse;        
+        }
+        #temp{
+            border-radius: 1px;            
+        }
+    </style>
+    <script src="weatherData.js"></script>
+</head>
+<body>
+    <center>
+        <h1>WEATHER REPORT</h1>
+        Enter the city: <input type="text" id="temp"><br><br>
+        <button id="submit" onclick="fetchWeather()">Fetch Weather</button><br><br>
+        
+        <div id="table">
+        </div>
+    </center>
+</body>
+</html>
